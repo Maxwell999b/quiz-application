@@ -16,8 +16,8 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Quiz Application",
   description:
-    "The Quiz App is a simple web application that allows users to answer multiple-choice questions related to React. The app includes a timer for each question, different difficulty levels, and a feature to display past quiz results and high scores.",
-  keywords: ["Quiz", "React", "TypeScript", "Multiple Choice", "Learning"],
+    "The Quiz App is a simple, fun, and interactive web application that allows users to test their knowledge on various topics. The app includes multiple-choice questions with different difficulty levels and tracks quiz scores for progress.",
+  keywords: ["Quiz", "React", "Multiple Choice", "Education", "Trivia"],
   authors: [{ name: "Maxwell999b" }],
   creator: "Maxwell999b",
   publisher: "Quiz Application",
@@ -26,25 +26,25 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://quiz-application-smoky.vercel.app",
-    title: "React Quiz Application",
+    title: "Quiz Application - Test Your Knowledge",
     description:
-      "Test your React knowledge with timed multiple-choice questions across different difficulty levels. Track your progress and compete for high scores!",
-    siteName: "React Quiz Application",
+      "Challenge yourself with our Quiz Application! Answer multiple-choice questions across various categories and difficulty levels. Track your scores and improve over time.",
+    siteName: "Quiz Application",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "React Quiz Application",
+        alt: "Quiz Application - Test Your Knowledge",
         type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "React Quiz Application",
+    title: "Quiz Application - Test Your Knowledge",
     description:
-      "Test your React knowledge with timed multiple-choice questions across different difficulty levels. Track your progress and compete for high scores!",
+      "Challenge yourself with our Quiz Application! Answer multiple-choice questions across various categories and difficulty levels.",
     images: ["/android-chrome-512x512.png"],
     creator: "@Maxwell999b",
   },
@@ -55,17 +55,17 @@ export const metadata: Metadata = {
       { url: "/favicon-16x16.png", type: "image/png" },
     ],
     apple: [{ url: "/apple-touch-icon.png", type: "image/png" }],
-    shortcut: ["/favicon-16x16.png"],
     other: [
       {
         rel: "mask-icon",
-        url: "/og-image.svg",
+        url: "/safari-pinned-tab.svg",
       },
     ],
   },
   manifest: "/site.webmanifest",
 };
 
+// Root layout component
 export default function RootLayout({
   children,
 }: Readonly<{
