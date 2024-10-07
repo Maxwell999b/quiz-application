@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     siteName: "Quiz Application",
     images: [
       {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
+        url: "https://quiz-application-smoky.vercel.app/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
         alt: "Quiz Application - Test Your Knowledge",
         type: "image/png",
       },
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "Quiz Application - Test Your Knowledge",
     description:
       "Challenge yourself with our Quiz Application! Answer multiple-choice questions across various categories and difficulty levels.",
-    images: ["/android-chrome-512x512.png"],
+    images: ["https://quiz-application-smoky.vercel.app/android-chrome-512x512.png"],
     creator: "@Maxwell999b",
   },
   icons: {
@@ -72,12 +72,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta property="og:image" content="https://quiz-application-smoky.vercel.app/android-chrome-512x512.png" />
-        <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="512" />
-        <meta property="og:image:height" content="512" />
-      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>{children}</body>
     </html>
   );
